@@ -1,0 +1,9 @@
+<li *ngIf="!player || player.address == NULL_ADDRESS">
+    <span class="empty-slot text-ethereum-address">Empty slot.</span>
+</li>
+<li class="use-player-color" *ngIf="!!player && player.address != NULL_ADDRESS" [attr.data-player-num]="player.number">
+    <div style="width: 16px; display: inline-block; text-align:center; margin-right: 4px;">
+        <fa-icon style="font-size: 10px;" [icon]="['fas', player.iconClass]"></fa-icon>
+    </div>
+    <ethereum-address [value]="player?.address"></ethereum-address>
+</li>

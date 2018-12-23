@@ -1,0 +1,6 @@
+<button #container class="btn btn-default game-board-field" (click)="onClick()">
+    <span #text class="field-value">
+        <fa-icon *ngIf="field.value === 1" [icon]="['fas', 'times']" style="color: red;"></fa-icon>
+        <fa-icon *ngIf="field.value === 2" [icon]="['fas', 'circle']" style="color: green;"></fa-icon>
+    </span>
+</button>

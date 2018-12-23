@@ -1,0 +1,3 @@
+<div *ngFor="let field of gameBoard.fields">
+    <game-board-field (click$)="onFieldClicked($event)" [field]="field"></game-board-field>
+</div>
