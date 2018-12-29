@@ -1,0 +1,20 @@
+<div class="text-small">
+  <span class="headline">Game Phase</span>
+  <span>
+    <div style="width: 16px; display: inline-block; text-align:center; margin-right: 4px;">
+      <fa-icon [icon]="['fas', gamePhase | gamePhaseToIconClass]"></fa-icon>
+    </div>
+    <span>{{ gamePhase | gamePhaseToText }}</span>
+  </span>
+  <span style="display: block; margin-top: 4px;" *ngIf="gamePhase === GamePhaseEnum.Finished">
+    <i>Winner is </i><b>
+      <ethereum-address class="use-player-color" [attr.data-player-num]="winner.number" [value]="winner.address">
+      </ethereum-address>
+    </b>!
+  </span>
+  <span style="display: block; margin-top: 4px;">
+    <span class="headline">Elapsed Turns</span>
+    <span>{{ elapsedTurns || '-' }}</span>
+  </span>
+
+</div>

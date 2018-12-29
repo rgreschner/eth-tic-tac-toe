@@ -1,0 +1,38 @@
+{
+  "name": "eth-tic-tac-toe-contracts",
+  "version": "0.8.0",
+  "description": "Tic Tac Toe as example of a game written in Solidity / running on Ethereum.",
+  "author": "Ralph Greschner <ralph.greschner@gmail.com> (http://www.ralph-greschner.de)",
+  "keywords": [
+    "angular",
+    "blockchain",
+    "ethereum",
+    "game",
+    "solidity",
+    "tic tac toe"
+  ],
+  "license": "MIT",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "copy-assets": "cp ./build/contracts/TicTacToe.json ../frontend/src/assets/data",
+    "test": "tsc && truffle test ./test/tic-tac-toe.spec.js"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^2.2.48",
+    "@types/node": "^8.0.26",
+    "chai": "^4.1.1",
+    "chai-as-promised": "^7.1.1",
+    "sinon": "^7.2.3",
+    "typechain": "^0.3.11",
+    "typescript": "^2.5.2"
+  },
+  "dependencies": {
+    "bn.js": "4.11.8",
+    "openzeppelin-solidity": "2.1.2"
+  }
+}

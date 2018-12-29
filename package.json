@@ -1,0 +1,18 @@
+{
+  "name": "eth-tic-tac-toe",
+  "version": "0.8.0",
+  "description": "Tic Tac Toe as example of a game written in Solidity / running on Ethereum.",
+  "author": "Ralph Greschner <ralph.greschner@gmail.com> (http://www.ralph-greschner.de)",
+  "keywords": [
+    "angular",
+    "blockchain",
+    "ethereum",
+    "game",
+    "solidity",
+    "tic tac toe"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "lerna": "^3.4.3"
+  }
+}
