@@ -1,5 +1,7 @@
 # Tic Tac Toe on Ethereum
 
+<p align="center"><img src="/doc/img/screen-frontend.jpg?raw=true"/></p>
+
 This is an example of writing a game on blockchain using Solidity on Ethereum & a frontend written in Angular.
 
 Done as part of an assignment for School of AI's Decentralized Apps Course by [@llSourcell]( https://github.com/llSourcell) / Siraj Raval.
